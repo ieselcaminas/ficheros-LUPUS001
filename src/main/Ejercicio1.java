@@ -15,7 +15,7 @@ public class Ejercicio1 {
         } catch (IOException e) {
             System.out.println("No existe el directorio");
         }
-    }
+    } 
 
     private static String nombreFichero() throws IOException {
         return new BufferedReader(new InputStreamReader(System.in)).readLine();
