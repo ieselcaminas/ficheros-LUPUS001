@@ -64,7 +64,10 @@ public class Ejercicio1 {
                     System.out.println("La opción seleccionada es un archivo, no un directorio.");
                 }
             } else {
-                System.out.println("ERROR: Opción no válida / fuera del límite.");
+                System.out.println("ERROR: Opción no válida / fuera del límite. \n");
+                System.out.println("Introduzca de nuevo un número");
+                scanner.nextLine();
+                scanner.nextLine();//para que el usuario tenga que apretar ENTER para volver a escribir
             }
             
             System.out.println(); // Separador entre iteraciones
