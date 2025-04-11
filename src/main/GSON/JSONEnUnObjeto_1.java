@@ -2,7 +2,7 @@ package GSON;
 
 import com.google.gson.Gson;
 
-public class JSONEnUnObjeto {
+public class JSONEnUnObjeto_1 {
     public static void main(String[] args) {
         final String json = "{\"num\":46,\"nombre\":\"Miguel\",\"departamento\":10, \"edad\":20, \"sueldo\":1200.00}";
         final Gson gson = new Gson();
