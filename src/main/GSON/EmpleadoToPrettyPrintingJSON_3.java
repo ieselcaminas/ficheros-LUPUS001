@@ -8,6 +8,6 @@ public class EmpleadoToPrettyPrintingJSON_3 {
         final Empleado empleado = new Empleado(46, "Miguel", 10, 1100,00);
         final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
         final String prettyPrinting = prettyGson.toJson(empleado);
-
+        System.out.println(prettyPrinting);
     }
 }
