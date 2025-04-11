@@ -6,7 +6,7 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class JSONEnUnaListaDeObjetos {
+public class JSONEnUnaListaDeObjetos_4 {
     public static void main(String[] args) {
         final String empleado1JSON =
                 "{\"num\":1,\"nombre\":Andreu\",\"departamento\":10, \"edad\":32, \"sueldo\":1000.00}";
