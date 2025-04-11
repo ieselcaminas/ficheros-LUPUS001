@@ -8,20 +8,22 @@ public class JSONEnUnObjeto {
         final Gson gson = new Gson();
         final Empleado empleado = gson.fromJson(json, Empleado.class);
         System.out.println(empleado);
-
-        Empleado empleado1 = new Empleado(2, "Jose", 2100);
-        System.out.println(empleado1);
     }
 }
 
 class Empleado {
     int num;
     String nombre;
+    int departamento;
+    int edad;
     double sueldo;
 
-    public Empleado(int num, String nombre, double sueldo) {
+
+    public Empleado(int num, String nombre, int departamento, int edad, double sueldo) {
         this.num = num;
         this.nombre = nombre;
+        this.departamento = departamento;
+        this.edad = edad;
         this.sueldo = sueldo;
     }
 
@@ -49,8 +51,16 @@ class Empleado {
         this.sueldo = sueldo;
     }
 
+    public int getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(int departamento) {
+        this.departamento = departamento;
+    }
+
     @Override
     public String toString(){
-        return this.num + " - " + this.nombre + " - " + this.sueldo;
+        return "Num: " + this.num + ", Nombre: " + this.nombre + ", Departamento: " + this.departamento + ", edad: " + this.edad + ", sueldo:  " + this.sueldo;
     }
 }
