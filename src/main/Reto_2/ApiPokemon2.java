@@ -9,7 +9,7 @@ import java.util.Scanner;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class PokemonInfoApp {
+public class ApiPokemon2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
